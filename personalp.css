@@ -1,0 +1,267 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+
+header {
+    background-color: #f2c2c2; /* Background color for header */
+    padding: 10px 20px; /* Padding for header */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between nav items */
+    align-items: center; /* Center items vertically */
+    color: #000000;
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flex layout for nav items */
+}
+
+li {
+    margin-left: 119px; /* Space between nav items */
+}
+
+a {
+    text-decoration: none; /* Remove link underline */
+    color: #333; /* Link color */
+}
+
+a:hover {
+    color: #ffffff; /* Hover effect for links */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929; /* Hero background color */
+    color: #F4C2C2; /* Hero text color */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 600px; /* Limit width for better readability */
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Rounded profile picture */
+    margin-bottom: 20px;
+}
+
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    background: #444;
+    color: #fff;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 200px;
+    text-align: center;
+    background: #555;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center; /* Center-aligns all text within the portfolio section */
+}
+
+.portfolio h2 {
+    font-size: 1.5em; /* Adjust font size as desired */
+    margin-bottom: 10px; /* Space below heading */
+    color: #fff; /* Heading color */
+}
+
+.portfolio-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-filter button {
+    background: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 10px;
+    max-width: 200px;
+    max-height: fit-content;
+    margin: auto;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background: #292929;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e91e63;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Header adjustments */
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    ul {
+        flex-direction: column; /* Vertical layout for nav links */
+        gap: 15px; /* Add space between links */
+    }
+
+    li {
+        margin-left: 0; /* Reset margin for nav items */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .profile-pic {
+        width: 150px; /* Smaller profile picture */
+        height: 150px;
+    }
+
+    /* About Section */
+    .about-content {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    /* Services Section */
+    .services-grid {
+        flex-direction: column; /* Stack services vertically */
+    }
+
+    .service {
+        width: 100%; /* Full width for each service */
+    }
+
+    /* Portfolio Section */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    /* Contact Section */
+    .contact-info {
+        flex-direction: column; /* Stack contact info vertically */
+        gap: 15px; /* Space between items */
+    }
+
+    .contact-form {
+        max-width: 100%; /* Full width on mobile */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+}
